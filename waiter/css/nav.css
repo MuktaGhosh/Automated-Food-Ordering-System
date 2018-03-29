@@ -1,0 +1,189 @@
+/*
+-----------------------------------------------
+Navigation
+----------------------------------------------- */
+
+/* navigation (horizontal subnavigation)
+----------------------------------------------- */
+ul.nav,
+ul.nav * { margin:0;padding:0;}
+ul.nav {
+  background: rgba(0, 0, 0, 0) url("../img/nav-repeat2.jpg") repeat-x scroll 0 8px !important;
+  height: 58px;
+  max-width: 100%;
+  position: relative;
+}
+ul.nav li {
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	list-style-type:none;
+	font-weight:normal;
+	vertical-align:middle;
+}
+ul.nav li ul {
+	cursor:default;
+	width:100%;
+	max-width:100%;
+	position:absolute;
+	height:auto;
+	top:3.4em;
+	background-position:0 0 !important;
+	left:-9000px;
+}
+ul.nav li ul li {
+	padding:0;
+	border:none;
+	width:auto;
+	max-width:none;
+}
+ul.nav li a {
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:0 1em;
+	height:3.7em;
+	line-height:3.7em;
+	
+}
+ul.nav li ul li a {
+	position:relative !important; /* ie Mac */
+	cursor:pointer !important;
+	white-space:nowrap;
+	line-height:2.5em;
+	height:2.5em;
+	font-weight:normal;
+	color:#666;
+	background-position:0 50% !important;
+}
+
+ul.nav li:hover a,
+ul.nav li a:hover,
+ul.nav li a:focus {color:#000; background:#103D5F;}
+ul.nav li a:active {color:#666; background:#fff;}
+ul.nav li:hover ul {left:0;z-index:10}
+ul.nav li ul,
+ul.nav li {}
+ul.nav li:hover ul li a {color:#444;}
+ul.nav li:hover ul li a:hover {color:#000; background:#fff;}
+ul.nav li:hover ul li a:active {color:#666; background:#fff;}
+
+ul.nav li.current a {color:#666; background:#fff; cursor:default; font-weight:bold;}
+ul.nav li.current ul {left:0;z-index:5}
+ul.nav li.current ul,
+ul.nav li.current {background:#103D5F !important}
+ul.nav li.current ul li a {color:#444; background:#103D5F; font-weight:normal;}
+ul.nav li.current ul li a:hover {color:#000; background:#fff;}
+ul.nav li ul li.current a,
+ul.nav li ul li.current a:hover,
+ul.nav li.current:hover ul li a:active {color:#666; background:#fff;}
+
+
+/* navigation (vertical subnavigation)
+----------------------------------------------- */
+ul.nav {
+  
+}
+ul.main li {
+  position:relative;
+  top:0;
+  left:0;
+}
+ul.main li ul {
+  border-top:0;
+}
+ul.main li ul li {
+  float:left;
+}
+ul.main li a {
+	height:3.7em;
+	line-height:3.7em;
+	border:0;
+	color:#fff;
+
+}
+ul.main li ul li a {
+  width:12em;
+  line-height:3em;
+  height:3em;
+  text-align:left;
+  color:#fff;
+  border-top:1px solid #1A3A52;
+  background:#103D5F;
+}
+ul.main li a:focus {color:#fff; background:#103D5F;}
+ul.main li ul li a:hover {
+  color:#fff;
+  background:#103D5F;
+}
+ul.main li:hover a {
+  color:#fff;
+  background:#103D5F;
+}
+ul.main li:hover ul li a {color:#fff;}
+ul.main li:hover ul li a:hover {color:#fff; background:#2D536F;}
+ul.main li:hover a:active {background:#103D5F;}
+ul.main li:hover ul li a:active {color:#fff; background:#103D5F;}
+
+
+/* secondary list
+----------------------------------------------- */
+ul.nav li.secondary {
+	float:right;
+	color:#cde;
+	background:transparent !important;
+}
+ul.nav li.secondary span.status {
+	float:left;
+	padding:0 1em;
+	line-height:2.77em;
+	height:2.77em;
+  font-size:0.9em;
+}
+ul.nav li.secondary span.status a {
+	float:none;
+	display:inline;
+	padding:0;
+	height:auto;
+	line-height:auto;
+	color:#cde;
+	background:transparent;
+}
+ul.nav li.secondary span.status a:hover {
+	color:#fff;
+	background:transparent;
+}
+ul.nav li.secondary span.status span {
+	text-transform:capitalize;
+}
+ul.nav li.secondary:hover a {
+	color:#fff;
+	background:#1F4562;
+}
+ul.nav li.secondary:hover a:hover {
+	background:#1F4562;
+}
+ul.nav li.secondary:hover a:active {background:#1F4562;}
+
+ul.nav li.ic-dashboard a span, .ic-dashboard{background:url(../img/icon-dashboard.png) no-repeat center left;}
+ul.nav li.ic-typography a span, .ic-typography{background:url(../img/icon-typography.png) no-repeat center left;}
+ul.nav li.ic-charts a span, .ic-charts{background:url(../img/icon-charts-graphs.png) no-repeat center left;}
+ul.nav li.ic-form-style a span, .ic-form-style{background:url(../img/icon-form-style.png) no-repeat center left;}
+ul.nav li.ic-grid-tables a span, .ic-grid-tables{background:url(../img/icon-grid-tables.png) no-repeat center left;}
+ul.nav li.ic-gallery a span, .ic-gallery{background:url(../img/icon-gallery.png) no-repeat center left;}
+ul.nav li.ic-notifications a span, .ic-notifications{background:url(../img/icon-notifications.png) no-repeat center left;}
+ul.nav li {
+  background-image: none !important;
+  overflow: hidden;
+}
+
+ul.nav li a span {
+padding: 0px 0px 0px 30px;
+display: block;
+background-repeat: no-repeat;
+white-space: nowrap;
+}
+
+li.dd span:after{content: '';}

@@ -1,0 +1,148 @@
+﻿
+/* Gallery
+-------------------------------------------------------------- */
+
+ul.gallery
+{
+    margin: 0px auto 0px auto;
+    padding: 0;
+   
+}
+
+ul.gallery.small
+{
+    margin: 20px auto 0px auto;
+}
+
+ul.gallery li
+{
+    display: inline-block;
+    padding: 10px;
+    margin: 13px 13px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #98abb6;
+    text-transform: uppercase;
+    border: 1px solid #cccece;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: relative; /* CSS3 */
+    -webkit-text-shadow: #ffffff 1px 1px;
+    -moz-text-shadow: #ffffff 1px 1px;
+    text-shadow: #ffffff 1px 1px;
+    -webkit-box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.03);
+}
+
+ul.gallery.small li
+{
+    margin: 7px 5px;
+}
+
+ul.gallery li img
+{
+    margin: 0;
+    display: block;
+}
+
+ul.gallery li .actions
+{
+    display: none;
+}
+
+ul.gallery li a.view, ul.gallery li a.edit, ul.gallery li a.delete
+{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 84px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    text-indent: -9999px;
+    z-index: 1;
+}
+
+ul.gallery.small li a.view, ul.gallery.small li a.edit, ul.gallery.small li a.delete
+{
+    width: 45px;
+    height: 44px;
+}
+
+ul.gallery li a.edit, ul.gallery li a.view
+{
+    top: 30%;
+}
+
+ul.gallery li a.edit
+{
+    background-image: url(../img/icon_round_big_edit.png);
+    left: 22%;
+}
+
+ul.gallery.small li a.edit
+{
+    background-image: url(../img/icon_round_edit.png);
+    left: 22%;
+}
+
+ul.gallery li a.view
+{
+    background-image: url(../img/icon_round_big_view.png);
+    right: 22%;
+    z-index: 2;
+}
+
+ul.gallery.small li a.view
+{
+    background-image: url(../img/icon_round_view.png);
+    right: 22%;
+    z-index: 2;
+}
+
+ul.gallery li a.edit:hover, ul.gallery li a.view:hover
+{
+    background-position: 0px -84px;
+}
+
+ul.gallery.small li a.edit:hover, ul.gallery.small li a.view:hover
+{
+    background-position: 0px -44px;
+}
+
+ul.gallery li a.delete
+{
+    background-image: url(../img/icon_round_big_delete.png);
+    width: 33px;
+    height: 33px;
+    right: -10px;
+    top: -10px;
+}
+
+ul.gallery.small li a.delete
+{
+    background-image: url(../img/icon_round_delete.png);
+    width: 19px;
+    height: 19px;
+    right: -5px;
+    top: -5px;
+}
+
+ul.gallery li a.delete:hover
+{
+    background-position: 0px -33px;
+}
+
+ul.gallery.small li a.delete:hover
+{
+    background-position: 0px -19px;
+}
+
+ul.gallery li:hover
+{
+    /* CSS3 */
+    -webkit-box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
